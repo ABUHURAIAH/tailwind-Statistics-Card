@@ -10,12 +10,63 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/style.css" />
-
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    Get insights that help your business grow. Discover the benefits of data
-    analytics and make better decisions regarding revenue, customer experience,
-    and overall efficiency. 10k+ companies 314 templates 12m+ queries
+    <!-- Global Container -->
+    <div
+      class="flex flex-col items-center justify-center py-8 bg-[#0A0C1C] md:min-h-screen "
+    >
+      <!-- Card Container -->
+      <div class=" flex flex-col md:flex-row rounded-xl max-w-[1110px]  overflow-hidden mx-8 ">
+        <!-- Content Container -->
+        <div class="flex text-center flex-col justify-between p-8 bg-[#1B1937] md:w-1/2  ">
+
+          <h1 class="text-5xl text-white font-bold">
+            Get <span class="text-[#AB5CDB]">insights</span> that help your
+            business grow.
+          </h1>
+          <p class="text-2xl md:text-xl text-gray-500">
+            Discover the benefits of data
+            analytics and make better decisions regarding revenue, customer experience,
+            and overall efficiency.
+          </p>
+          <!-- rating box -->
+          <div class="flex w-full justify-between  ">
+            <!-- item 1 -->
+             <div class="flex flex-col space-y-1">
+              <h1 class="text-xl text-white font-bold">
+                10k+
+              </h1>
+              <p class="md:text-lg text-gray-500 uppercase">
+                companies
+              </p>
+             </div>
+            <!-- item 2 -->
+             <div class="flex flex-col space-y-1">
+              <h1 class="text-xl text-white font-bold">
+                314
+              </h1>
+              <p class="md:text-lg text-gray-500 uppercase">
+                 templates
+              </p>
+             </div>
+            <!-- item 3 -->
+             <div class="flex flex-col space-y-1">
+              <h1 class="text-xl text-white font-bold">
+                12m+
+              </h1>
+              <p class="md:text-lg text-gray-500 uppercase">
+                queries
+              </p>
+             </div>
+          </div>
+        </div>
+        <!-- image Container -->
+         <div class=" md:w-[540px] ">
+          <img src="images/image-header-desktop.jpg" alt="" class="w-full">
+         </div>
+      </div>
+    </div>
   </body>
 </html>
